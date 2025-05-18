@@ -23,7 +23,7 @@ esphome:
   # dio required on some (all?) boards otherwise after a serial
   # flash the board will boot-loop.
   platformio_options:
-    board_build.flash_mode: ${board_flash_mode}
+    board_build.flash_mode: qio
 
 esp32:
   board: esp32-s3-devkitc-1
