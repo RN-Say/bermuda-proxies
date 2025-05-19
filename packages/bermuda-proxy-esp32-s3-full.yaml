@@ -9,7 +9,6 @@ substitutions:
   ble_interval: 320ms
   ble_window: 300ms
   proxy_active_scan: "True"  # Set to false to avoid requesting scan info for device names etc
-  board_flash_mode: dio  # Default, can be overridden in user config
 
 
 packages:
@@ -19,7 +18,7 @@ esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   comment: ${comment}
-  name_add_mac_suffix: ${name_add_mac_suffix}
+  name_add_mac_suffix: true
   # dio required on some (all?) boards otherwise after a serial
   # flash the board will boot-loop.
   platformio_options:
