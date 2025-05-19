@@ -31,6 +31,20 @@ ota:
   platform: esphome
 
 wifi:
-  ssid: ${wifi_ssid}
-  password: ${wifi_password}
+  domain: .local
+  reboot_timeout: 15min
+  power_save_mode: LIGHT
+  fast_connect: false
+  enable_btm: false
+  enable_rrm: false
+  passive_scan: false
+  enable_on_boot: true
+
+  networks:
+    - ssid: ${wifi_ssid}
+      password: ${wifi_password}
+  ap:
+    ssid: "${name} Fallback"
+    password: "fallback1234"
+    ap_timeout: 1min
 
