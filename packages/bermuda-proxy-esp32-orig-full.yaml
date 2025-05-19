@@ -27,5 +27,5 @@ ota:
 
 
 wifi:
-  wifi_ssid: ${wifi_ssid}
-  wifi_password: ${wifi_password}
+  ssid: ${wifi_ssid}
+  password: ${wifi_password}
