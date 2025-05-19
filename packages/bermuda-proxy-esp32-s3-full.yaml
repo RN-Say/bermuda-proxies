@@ -18,7 +18,7 @@ esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   comment: ${comment}
-  name_add_mac_suffix: true
+  name_add_mac_suffix: True
   # dio required on some (all?) boards otherwise after a serial
   # flash the board will boot-loop.
   platformio_options:
